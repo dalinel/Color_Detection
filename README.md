@@ -1,14 +1,16 @@
 # Color Detection For Collision Avoidance
 
+This program is a color detection program for collision avoidance.
+An integrated version with an active node is avaible on the obstacle_detection_with_lidar branch.
+
 ##Setup
 
-This program is a color detection program for collision avoidance.
-An integrated version with an active node is avaible on the obstacle_detection branch.
-
 ###Requirements:
+
 	*opencv 3.0. Should work with other older versions or with opencv 3.1.
 
 ###Install:
+
 	*cd "path to the Color_Detection dir"
 	*If you don't have a usb webcam change port to 0 in main.cpp line 6
 	*mkdir build
@@ -17,9 +19,11 @@ An integrated version with an active node is avaible on the obstacle_detection b
 	*make
 	
 ###Run :
+
 	*./detect color1 [color2 color3 color4 ...]
 	
 ###Colors avaible:
+
 	*red (well adjusted) 
 	*orange (well adjusted)
 	*green
@@ -28,6 +32,7 @@ An integrated version with an active node is avaible on the obstacle_detection b
 	*blue
 
 ###Ex :
+
 	* ./detect red orange green
 	* ./detect red
 
