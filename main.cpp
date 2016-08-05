@@ -3,8 +3,9 @@ using namespace cv;
 using namespace std;
 
 /*Parameters for detection */
+int bottomPixelsToCrop = 0;// height in pixel of the visible part of the boat on the image
 int port = 1; //0 to use the computer's inner webcam
-int minAreaToDetect = 200;
+int minAreaToDetect = 100;
 int maxAreaToDetect = 20000;
 int numberOfCapturesPerDetection=5;
 int delay = 1;// In ms. If you want to only make the detection every 5ms put 5.
@@ -191,6 +192,12 @@ int main( int argc, char** argv )
                 cout << "Cannot read a frame from video stream" << endl;
                 break;
             }
+            //Crop the part corresponding to the boat
+            // Setup a rectangle to define your region of interest
+            cv::Rect myROI(0, 0, imgOriginal.cols,imgOriginal.rows - bottomPixelsToCrop);
+            // Crop the full image to that image contained by the rectangle myROI
+            // Note that this doesn't copy the data
+            imgOriginal = imgOriginal(myROI);
             // Threshold and fine the bounding rects of the obstacle in one frame
             for(int i = 0; i<(int)hsvValues.size(); i++){
                 imgThresholded=threshold(imgOriginal,hsvValues[i]);
