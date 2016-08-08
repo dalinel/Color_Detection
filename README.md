@@ -69,13 +69,13 @@ To settle the highH trackbar,you need to decrease the value step by step. If the
 
 Do the same for S and V.
 
-You will then have good H, S and V threshold values. Watch out to luminosity, test your values with light and shadow.
+You will then have good H, S and V threshold values. Watch out for luminosity, test your values with light and shadow.
 
 
 ### Quick adjustment
 
 Click on the color to detect in the "Detection" Window. H, S and V threshold values
-will be adjusted automatically. You can increase the gap between min and max to be able to detect the object with a variation of luminosity.Watch-out to luminosity, test your values with light and shadow.
+will be adjusted automatically. You can increase the gap between min and max to be able to detect the object with a variation of luminosity.Watch-out for luminosity, test your values with light and shadow.
 
 ## Extra Parameters and adjustments
 
@@ -84,5 +84,5 @@ Extra parameters you can change:
 	*int numberOfCapturesPerDetection (main.cpp line 10) : At each loop iteration the program will take
 	 		numberOfCapturesPerDetection pictures and compute the position of the detected obstacles with
 			a mean on those pictures.
-			
+
 	*int delay (main.cpp line 11) : Delay between each loop iteration.
