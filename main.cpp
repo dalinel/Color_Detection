@@ -4,7 +4,7 @@ using namespace std;
 
 /*Parameters for detection */
 int bottomPixelsToCrop = 0;// height in pixel of the visible part of the boat on the image
-int port = 1; //0 to use the computer's inner webcam
+int port = 1; //0 to use the computer's inner webcam;
 int minAreaToDetect = 100;
 int maxAreaToDetect = 20000;
 int numberOfCapturesPerDetection=5;
