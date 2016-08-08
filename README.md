@@ -82,6 +82,7 @@ will be adjusted automatically. You can increase the gap between min and max to 
 Extra parameters you can change:
 
 	*int numberOfCapturesPerDetection (main.cpp line 10) : At each loop iteration the program will take
-	 	numberOfCapturesPerDetection pictures and compute the position of the detected obstacles with a mean
-		on those pictures.
+	 		numberOfCapturesPerDetection pictures and compute the position of the detected obstacles with
+			a mean on those pictures.
+			
 	*int delay (main.cpp line 11) : Delay between each loop iteration.
