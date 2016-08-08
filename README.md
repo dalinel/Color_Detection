@@ -41,9 +41,12 @@ An integrated version with an active node is available on the obstacle_detection
 Parameters to change depending of your camera:
 
 	*int port (main.cpp line 7): set to 0 for the inner camera of the computer and to 1 for an outer camera.
-	*int bottomPixelsToCrop (main.cpp line 6) : if you need to crop the bottom part of your image to not detect<br /> it (ex: height in pixel of the visible part of the boat on the image)
-	*float webcamAngleApertureX (detectUtility.cpp line 53): the corresponding angle value in radians of one<br /> pixel in the X direction
-	*float webcamAngleApertureY (detectUtility.cpp line 54):  the corresponding angle value in radians of one<br /> pixel in the Y direction
+	*int bottomPixelsToCrop (main.cpp line 6) : if you need to crop the bottom part of your image to not detect
+	 it (ex: height in pixel of the visible part of the boat on the image)
+	*float webcamAngleApertureX (detectUtility.cpp line 53): the corresponding angle value in radians of one
+	 pixel in the X direction
+	*float webcamAngleApertureY (detectUtility.cpp line 54):  the corresponding angle value in radians of one
+	 pixel in the Y direction
 
 For a better detection it is almost mandatory to make adjustments on the colors to detect. When the program starts it opens a "Change Detection Values" window with trackbars. For each color you will need to adjust the H, S and V threshold values. If you want to store those new found values you can do it in detectUtility.cpp in the void initHsvColors() function.
 
